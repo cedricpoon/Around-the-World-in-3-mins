@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class draggable : MonoBehaviour {
+public class Draggable : MonoBehaviour {
 
 	private Vector3 screenPoint;
 	private Vector3 offset;
