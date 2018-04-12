@@ -21,6 +21,19 @@ public class DimSumGameMaster : MonoBehaviour {
 	public void UpdateScoreBy (int score) {
 		if (!(this.score <= 0 && score < 0)){
 			this.score += score;
+
+			if (score > 0) {
+				scoreText.color = Color.green;
+				new WaitForSecondsIEnum (1f, delegate(object[] objects) {
+					scoreText.color = Color.black;
+				}).Run (this);
+			} else {
+				scoreText.color = Color.red;
+				new WaitForSecondsIEnum (1f, delegate(object[] objects) {
+					scoreText.color = Color.black;
+				}).Run (this);
+			}
+
 			scoreText.text = this.score.ToString();
 		}
 

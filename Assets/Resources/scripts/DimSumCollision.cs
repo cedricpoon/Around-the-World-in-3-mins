@@ -9,7 +9,8 @@ public class DimSumCollision : MonoBehaviour {
 		{ "dough", "stuffing", "siumei" },
 		{ "siumei", "steamer-basket", "siumei-many" },
 		{ "siumei-many", "chat-balloon-1", "" },
-		{ "siumei-many", "chat-balloon-2", "" }
+		{ "siumei-many", "chat-balloon-2", "" },
+		{ "", "RubbishBin", "" }
 	};
 
 	[SerializeField]
@@ -35,7 +36,7 @@ public class DimSumCollision : MonoBehaviour {
 	void OnCollisionEnter (Collision col)
 	{
 		for (int i = 0; i < makeList.GetLength(0); i++) {
-			if (col.gameObject.name == makeList[i, 0] || this.name == makeList[i, 0])
+			if (col.gameObject.name == makeList[i, 0] || this.name == makeList[i, 0] || makeList[i, 0] == "")
 				if (col.gameObject.name == makeList[i, 1] || col.gameObject.name == makeList[i, 1]) {
 
 					Destroy (this.gameObject);

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WaitForSecondsIEnum
 {
-	public delegate void NextAction(object[] objects = null);
+	public delegate void NextAction(object[] objects);
 
 	NextAction _nextAction;
 
