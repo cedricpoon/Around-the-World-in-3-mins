@@ -17,7 +17,11 @@ public class Dumping : MonoBehaviour {
 	}
 
 	void OnCollisionEnter (Collision col) {
+		col.transform.position += Vector3.left;
+
 		col.gameObject.GetComponent<DimSumCollision> ().OnRecreate ();
-		master.UpdateScoreBy (-10 /* Cost of dumping into rubbish bin */);
+		master.UpdateScoreBy (-5 /* Cost of dumping into rubbish bin */);
+
+		Destroy (col.gameObject);
 	}
 }

@@ -106,9 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a84494a6f086c4859b63602085e3fd8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rawMaterials:
-  - {fileID: 1352122024604484, guid: 10853b117ad5040eba1cdc26cb0014a3, type: 2}
-  - {fileID: 1576043907659268, guid: 31ca6dfdc6ae5414985394b83bebd8dc, type: 2}
+  RawMaterials:
+  - {fileID: 1437255451237092, guid: 31ca6dfdc6ae5414985394b83bebd8dc, type: 2}
+  - {fileID: 1589250927482998, guid: 10853b117ad5040eba1cdc26cb0014a3, type: 2}
 --- !u!212 &212676448855983390
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -142,7 +142,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: ea970fe576789409e95b818fd01a9b0d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

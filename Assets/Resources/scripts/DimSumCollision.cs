@@ -8,13 +8,15 @@ public class DimSumCollision : MonoBehaviour {
 	string[,] makeList = { 
 		{ "dough", "stuffing", "siumei" },
 		{ "siumei", "steamer-basket", "siumei-many" },
-		{ "siumei-many", "chat-balloon-1", "" },
-		{ "siumei-many", "chat-balloon-2", "" },
-		{ "", "RubbishBin", "" }
-	};
 
-	[SerializeField]
-	GameObject[] rawMaterials;
+		{ "dough", "pork", "chasiubao" },
+		{ "chasiubao", "steamer-basket", "chasiubao-many" },
+
+		{ "dough", "shrimp", "shrimp-dumpling" },
+		{ "shrimp-dumpling", "steamer-basket", "shrimp-dumpling-many" }
+	};
+		
+	public GameObject[] RawMaterials;
 
 	// Use this for initialization
 	void Start () {
@@ -27,9 +29,9 @@ public class DimSumCollision : MonoBehaviour {
 	}
 
 	public void OnRecreate() {
-		for (int i = 0; i < rawMaterials.GetLength(0); i++){
-			GameObject target = (GameObject)Instantiate (rawMaterials [i]);
-			target.name = rawMaterials [i].name;
+		for (int i = 0; i < RawMaterials.GetLength(0); i++){
+			GameObject target = (GameObject)Instantiate (RawMaterials [i]);
+			target.name = RawMaterials [i].name;
 		}
 	}
 

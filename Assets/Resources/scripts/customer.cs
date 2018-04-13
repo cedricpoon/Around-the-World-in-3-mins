@@ -42,6 +42,8 @@ public class Customer : MonoBehaviour {
 			}).Run (this);
 
 			master.UpdateScoreBy (10 /* Add 10 marks for correct dim sum */);
+
+			Destroy (col.gameObject);
 		} else {
 
 			transform.Find("wishlist").GetComponent<SpriteRenderer> ().sprite = wrong;
@@ -51,7 +53,7 @@ public class Customer : MonoBehaviour {
 				ShowUp ();
 			}).Run (this);
 
-			master.UpdateScoreBy (-10 /* Minus 10 marks for wrong or incompleted dim sum */);
+			master.UpdateScoreBy (-5 /* Minus 10 marks for wrong or incompleted dim sum */);
 		}
 	}
 
