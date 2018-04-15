@@ -47,8 +47,6 @@ public class KangarooGameMaster : MonoBehaviour {
 	}
 
 	void EndGame() {
-		Marquee.IsActive = false;
-
 		new WaitForSecondsIEnum (1f, delegate {
 			overlay.SetActive (true);
 		}).Run (this);
@@ -56,7 +54,8 @@ public class KangarooGameMaster : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		GenerateKangaroo ();
+		if (timeRemaining > 0)
+			GenerateKangaroo ();
 	}
 
 	void OnChangeTimeRemaining (int seconds) {
