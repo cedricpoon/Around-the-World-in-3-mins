@@ -19,6 +19,9 @@ public class BambooGameMaster : MonoBehaviour {
 	[SerializeField]
 	GameObject overlay;
 
+	[SerializeField]
+	GameObject hand;
+
 	public float minInterval, maxInterval, minSpeed, maxSpeed;
 
 	public GameObject[] items;
@@ -71,6 +74,7 @@ public class BambooGameMaster : MonoBehaviour {
 		new WaitForSecondsIEnum (1f, delegate(object[] objects) {
 			isEnded = true;
 			overlay.SetActive (true);
+			hand.SetActive(false);
 		}).Run (this);
 	}
 

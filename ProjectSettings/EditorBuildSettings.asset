@@ -4,4 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Resources/scenes/menu.unity
+    guid: d0a9b6ab64f1349ee8dae89294e9fbdb
+  - enabled: 1
+    path: Assets/Resources/scenes/Dimsum.unity
+    guid: 1003e8c7ca6b2418faaf8601a816b30c
+  - enabled: 1
+    path: Assets/Resources/scenes/Kangaroo.unity
+    guid: 28e425836443e4f5d825175b4b77c398
+  - enabled: 1
+    path: Assets/Resources/scenes/Somen.unity
+    guid: 4755062d973bf4c87836d620b6dff58f
