@@ -819,13 +819,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 397566849}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0749d68f147d4f7084b1df41c4e511d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c2d9d612504747adad2bdf549dfbf93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfDimSums:
+  - {fileID: 1605941814556772, guid: 7ce47fca00322423caf4a1af954cae73, type: 2}
   - {fileID: 1460718157293614, guid: 40fe7ae6f5b2c440bb514914920c1eff, type: 2}
   - {fileID: 1276026878211546, guid: 0b8e1a547a39e4e20a4f8f662d040cf8, type: 2}
-  - {fileID: 1605941814556772, guid: 7ce47fca00322423caf4a1af954cae73, type: 2}
   master: {fileID: 253049930}
   wrong: {fileID: 21300000, guid: 94176ad4ffc4c4124848b5399edf5a6d, type: 3}
   right: {fileID: 21300000, guid: 5186bd5e3ab1f4d0f89808cda1faa3c6, type: 3}
@@ -1464,10 +1464,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 1589250927482998, guid: 10853b117ad5040eba1cdc26cb0014a3, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 10853b117ad5040eba1cdc26cb0014a3, type: 2}
   m_IsPrefabParent: 0
@@ -1742,13 +1738,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1383033395}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0749d68f147d4f7084b1df41c4e511d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c2d9d612504747adad2bdf549dfbf93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfDimSums:
-  - {fileID: 1460718157293614, guid: 40fe7ae6f5b2c440bb514914920c1eff, type: 2}
-  - {fileID: 1276026878211546, guid: 0b8e1a547a39e4e20a4f8f662d040cf8, type: 2}
   - {fileID: 1605941814556772, guid: 7ce47fca00322423caf4a1af954cae73, type: 2}
+  - {fileID: 1276026878211546, guid: 0b8e1a547a39e4e20a4f8f662d040cf8, type: 2}
+  - {fileID: 1460718157293614, guid: 40fe7ae6f5b2c440bb514914920c1eff, type: 2}
   master: {fileID: 253049930}
   wrong: {fileID: 21300000, guid: 94176ad4ffc4c4124848b5399edf5a6d, type: 3}
   right: {fileID: 21300000, guid: 5186bd5e3ab1f4d0f89808cda1faa3c6, type: 3}

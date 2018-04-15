@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 54089831919002214}
   - component: {fileID: 65059091500816950}
   - component: {fileID: 65071766773023976}
-  - component: {fileID: 114455026313684074}
   - component: {fileID: 114037771417159772}
+  - component: {fileID: 114437197687098578}
   m_Layer: 0
   m_Name: shrimp-dumpling
   m_TagString: Untagged
@@ -98,7 +98,7 @@ MonoBehaviour:
   RawMaterials:
   - {fileID: 1589250927482998, guid: 10853b117ad5040eba1cdc26cb0014a3, type: 2}
   - {fileID: 1683597608347298, guid: 2519b8a45f81645adad72c5db9dca5ae, type: 2}
---- !u!114 &114455026313684074
+--- !u!114 &114437197687098578
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1118568777994254}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60aa8f272b92e47ba96ff8862825ce42, type: 3}
+  m_Script: {fileID: 11500000, guid: e6cb0058596be4006b66e059ab38b946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212425662089113700

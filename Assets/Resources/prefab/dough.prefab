@@ -20,11 +20,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4668557615292258}
   - component: {fileID: 212145046360732014}
-  - component: {fileID: 114849571172321632}
   - component: {fileID: 114070835536051610}
   - component: {fileID: 65262032350906116}
   - component: {fileID: 54026949940347236}
   - component: {fileID: 65653204639952854}
+  - component: {fileID: 114915271947609406}
   m_Layer: 0
   m_Name: dough
   m_TagString: Untagged
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RawMaterials:
   - {fileID: 1589250927482998}
---- !u!114 &114849571172321632
+--- !u!114 &114915271947609406
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1589250927482998}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60aa8f272b92e47ba96ff8862825ce42, type: 3}
+  m_Script: {fileID: 11500000, guid: e6cb0058596be4006b66e059ab38b946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212145046360732014
