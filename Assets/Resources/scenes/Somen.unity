@@ -870,7 +870,7 @@ MonoBehaviour:
   minInterval: 1
   maxInterval: 5
   minSpeed: 0.2
-  maxSpeed: 1
+  maxSpeed: 0.5
   items:
   - {fileID: 1523779786387696, guid: f3e5984271f834a13856bcbc46514a1b, type: 2}
   - {fileID: 1293222327064606, guid: e230be2a26beb4c6c851e48ecb2ab32c, type: 2}
