@@ -33,7 +33,6 @@ public class KangarooGameMaster : MonoBehaviour {
 
 			if (timeRemaining <= totalTime / 2) {
 				noOfKangaroos = 2;
-				timeRef.color = Color.red;
 			}
 
 			if (timeRemaining == 0) {
@@ -67,6 +66,10 @@ public class KangarooGameMaster : MonoBehaviour {
 
 	public void Hit () {
 		OnChangeTimeRemaining (+10 /* Killing kangaroo */);
+		timeRef.color = Color.red;
+		new WaitForSecondsIEnum (0.5f, delegate {
+			timeRef.color = Color.black;
+		}).Run (this);
 	}
 
 	public void DismissKangaroo () {
