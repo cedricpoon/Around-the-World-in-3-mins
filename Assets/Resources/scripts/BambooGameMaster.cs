@@ -16,11 +16,16 @@ public class BambooGameMaster : MonoBehaviour {
 	[SerializeField]
 	Vector2 startPosition;
 
+	[SerializeField]
+	GameObject overlay;
+
 	public float minInterval, maxInterval, minSpeed, maxSpeed;
 
 	public GameObject[] items;
 
 	WaitForSecondsIEnum waitTick;
+
+	bool isEnded;
 
 	// Use this for initialization
 	void Start () {
@@ -33,14 +38,15 @@ public class BambooGameMaster : MonoBehaviour {
 
 			item.GetComponent<FlowItem>().RelativeSpeed = Random.Range(minSpeed, maxSpeed);
 
-			waitTick.SetSeconds(Random.Range(minInterval, maxInterval)).Run(this);
+			if (!isEnded)
+				waitTick.SetSeconds(Random.Range(minInterval, maxInterval)).Run(this);
 		});
 
 		waitTick.Run (this);
 	}
 
 	public void UpdatePickedNumber (int number) {
-		if (number > 0 && noOfPicked + number <= totalNo || number < 0 && noOfPicked - number >= 0) {
+		if (number > 0 && noOfPicked + number <= totalNo || number < 0 && noOfPicked + number >= 0) {
 			noOfPicked += number;
 			noRef.text = noOfPicked.ToString ();
 
@@ -62,7 +68,10 @@ public class BambooGameMaster : MonoBehaviour {
 	}
 
 	void EndGame () {
-		
+		new WaitForSecondsIEnum (1f, delegate(object[] objects) {
+			isEnded = true;
+			overlay.SetActive (true);
+		}).Run (this);
 	}
 
 	// Update is called once per frame

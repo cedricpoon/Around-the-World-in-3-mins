@@ -49,6 +49,7 @@ public class PickedIndicator : MonoBehaviour {
 		} else {
 			transform.Find ("icon").GetComponent<SpriteRenderer> ().sprite = wrongIcon;
 			Flicker ();
+			master.UpdatePickedNumber (-1);
 		}
 	}
 }
