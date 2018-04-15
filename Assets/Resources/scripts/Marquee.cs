@@ -13,6 +13,8 @@ public class Marquee : MonoBehaviour {
 
 	public GameObject NextMarquee;
 
+	public bool IsHorizontal;
+
 	public bool isShown {
 		get {
 			return GetComponent<Renderer> ().isVisible;
@@ -28,7 +30,10 @@ public class Marquee : MonoBehaviour {
 	public virtual void Update () {
 		if (IsActive) {
 			// Actual rolling
-			transform.position -= new Vector3 (0, RelativeSpeed);
+			if (IsHorizontal)
+				transform.position += new Vector3 (RelativeSpeed, 0);
+			else
+				transform.position -= new Vector3 (0, RelativeSpeed);
 
 			if (isShown && NextMarquee == null && MarqueeList.Length > 0)
 				GenerateNext ();

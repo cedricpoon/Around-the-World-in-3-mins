@@ -10,6 +10,11 @@ public class WaitForSecondsIEnum
 
 	float _seconds;
 
+	public WaitForSecondsIEnum SetSeconds (float seconds) {
+		_seconds = seconds;
+		return this;
+	}
+
 	public WaitForSecondsIEnum (float seconds, NextAction nextAction) : base() {
 		_nextAction = nextAction;
 		_seconds = seconds;
