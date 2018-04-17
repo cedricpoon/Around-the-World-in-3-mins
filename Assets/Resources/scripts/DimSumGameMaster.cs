@@ -14,7 +14,7 @@ public class DimSumGameMaster : MonoBehaviour {
 	int maxScore;
 
 	[SerializeField]
-	Customer[] customers;
+	CustomerBehaviour[] customers;
 
 	public GameObject overlay;
 
@@ -38,7 +38,7 @@ public class DimSumGameMaster : MonoBehaviour {
 		}
 
 		if (this.score >= maxScore) {
-			foreach (Customer c in customers)
+			foreach (CustomerBehaviour c in customers)
 				c.OnFull ();
 			
 			new WaitForSecondsIEnum (1f, delegate(object[] objects) {

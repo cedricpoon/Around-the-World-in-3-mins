@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65717734565417456}
   - component: {fileID: 54490902883651936}
   - component: {fileID: 114764716788977318}
-  - component: {fileID: 114290905909062648}
+  - component: {fileID: 114012027241819350}
   m_Layer: 0
   m_Name: shrimp
   m_TagString: Untagged
@@ -84,7 +84,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 10, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114290905909062648
+--- !u!114 &114012027241819350
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1683597608347298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6cb0058596be4006b66e059ab38b946, type: 3}
+  m_Script: {fileID: 11500000, guid: 1cb6a5bc3b15c4026a947788723d9118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114764716788977318

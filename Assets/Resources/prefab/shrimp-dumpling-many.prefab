@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65595747914786672}
   - component: {fileID: 65716845928605668}
   - component: {fileID: 114793861867453640}
-  - component: {fileID: 114914988272567760}
+  - component: {fileID: 114112772766873782}
   m_Layer: 0
   m_Name: shrimp-dumpling-many
   m_TagString: Untagged
@@ -84,6 +84,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3, y: 3, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114112772766873782
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1276026878211546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cb6a5bc3b15c4026a947788723d9118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114793861867453640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,17 +110,6 @@ MonoBehaviour:
   - {fileID: 1589250927482998, guid: 10853b117ad5040eba1cdc26cb0014a3, type: 2}
   - {fileID: 1683597608347298, guid: 2519b8a45f81645adad72c5db9dca5ae, type: 2}
   - {fileID: 1643231956417342, guid: 6f29faf3fa4374a0b9bd1e2a3aa6b33a, type: 2}
---- !u!114 &114914988272567760
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1276026878211546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6cb0058596be4006b66e059ab38b946, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212781276350733528
 SpriteRenderer:
   m_ObjectHideFlags: 1

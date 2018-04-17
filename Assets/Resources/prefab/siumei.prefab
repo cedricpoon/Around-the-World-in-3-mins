@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65147255193174012}
   - component: {fileID: 54939256493764202}
   - component: {fileID: 65443451078172346}
-  - component: {fileID: 114904000412329464}
+  - component: {fileID: 114956960912178606}
   m_Layer: 0
   m_Name: siumei
   m_TagString: Untagged
@@ -84,17 +84,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 10, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114904000412329464
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1037483291429570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6cb0058596be4006b66e059ab38b946, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114922640435303020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -109,6 +98,17 @@ MonoBehaviour:
   RawMaterials:
   - {fileID: 1437255451237092, guid: 31ca6dfdc6ae5414985394b83bebd8dc, type: 2}
   - {fileID: 1589250927482998, guid: 10853b117ad5040eba1cdc26cb0014a3, type: 2}
+--- !u!114 &114956960912178606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1037483291429570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cb6a5bc3b15c4026a947788723d9118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212676448855983390
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65985176535598024}
   - component: {fileID: 54245658310393980}
   - component: {fileID: 65563744409735884}
-  - component: {fileID: 114894996785621188}
+  - component: {fileID: 114877460982812120}
   m_Layer: 0
   m_Name: stuffing
   m_TagString: Untagged
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RawMaterials:
   - {fileID: 1437255451237092}
---- !u!114 &114894996785621188
+--- !u!114 &114877460982812120
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1437255451237092}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6cb0058596be4006b66e059ab38b946, type: 3}
+  m_Script: {fileID: 11500000, guid: 1cb6a5bc3b15c4026a947788723d9118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212910407299756386
